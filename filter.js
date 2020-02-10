@@ -12,4 +12,18 @@ const numerosFiltrados = numeros.filter(x=> x < 5);
 
 //*Filter mantiene todos los elementos, siempre y cuando la condición sea verdadera, generando un nuevo arreglo.
 
-console.log(numerosFiltrados, numeros);
+//*Filter es inmutable, no momificara los datos de origen.
+
+//console.log(numerosFiltrados, numeros);
+
+
+//*Filter() en objetos retorna el elemento completo.
+const perros = mascotas.filter( x => x.raza == "perro");
+
+const gatos = mascotas.filter( x => x.raza == "gato");
+
+
+console.log(gatos);
+
+
+
